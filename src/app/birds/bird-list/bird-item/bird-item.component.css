@@ -1,0 +1,72 @@
+.example-card-small {
+  max-width: 20vw;
+  max-height: fit-content;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.mat-card-image {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border-radius: 5px;
+}
+
+.mat-card-actions {
+  margin: 0px;
+  padding: 5px;
+}
+
+::ng-deep .mat-card-header-text {
+  margin: 0px !important;
+}
+
+.like {
+  margin: 5px;
+  padding-top: 3.5px;
+  padding-bottom: 3.5px;
+  border-radius: 5px;
+  border: none;
+
+}
+
+.display-flex {
+
+  display: flex;
+  justify-content: end;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.mat-card-title {
+  width: fit-content;
+}
+
+a:hover {
+  color: green;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.centered {
+  justify-content: center;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.632);
+}
+
+.aliux {
+  background-color: rgba(255, 255, 255, 0.553);
+}
+
+.mat-card {
+  background-color: #f5f5f5;
+}

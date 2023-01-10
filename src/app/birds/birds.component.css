@@ -1,0 +1,16 @@
+.birds-container {
+    display: flex;
+    flex-direction: row;
+    max-height: 90vh;
+}
+
+.birds-detail-container {
+    max-width: 75vw;
+    margin: 20px;
+    height: auto;
+}
+
+.birds-list-container {
+    margin: 10px;
+    overflow: hidden;
+}

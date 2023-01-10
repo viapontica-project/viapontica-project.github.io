@@ -1,0 +1,33 @@
+<!-- <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Large</mat-card-subtitle>
+        <img mat-card-lg-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+      
+    </mat-card-content>
+  </mat-card> -->
+
+
+  <mat-card class="example-card-big">
+    <mat-card-header>
+
+      <mat-card-title class="title-big" matTooltip="Подробна информация">
+        <a href={{bird.infoLink}} >{{bird.name}}</a>
+      </mat-card-title>
+      <mat-card-subtitle class="subtitle-big"> <strong>Разред: </strong>{{bird.species}}</mat-card-subtitle>
+      <mat-card-subtitle class="subtitle-big"><strong>Местообитание: </strong>{{bird.area}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="bird.image" alt="{{ bird.name }}">
+    <mat-card-content class="subtitle-big">
+      <p>{{bird.description}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      
+    </mat-card-actions>
+  </mat-card>
+  <router-outlet></router-outlet>
+  

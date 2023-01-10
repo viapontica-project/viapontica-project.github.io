@@ -1,0 +1,54 @@
+<div class="cards-container1">
+    <div class="search-container">
+        <mat-form-field class="width-40" appearance="outline">
+            <mat-label class="bird-search">Изберете разред</mat-label>
+            <mat-select [formControl]="control" disableRipple [(value)]="selectedSp" (closed)="updateBirds()">
+                <mat-option disabled>
+                    <input type="text" matInput [formControl]="filter" placeholder="Filter...">
+                </mat-option>
+                <mat-divider></mat-divider>
+                <mat-option value="" *ngIf="control.value && !filter.value" (click)="resetFilter()">
+                    <mat-icon>replay</mat-icon> Изчистване на филтъра
+                </mat-option>
+                <ng-container *ngIf="filtedSpeciesOptions$ | async as filted">
+
+                    <mat-option disabled *ngIf="filted.length == 0">Такава опция не е намерена</mat-option>
+
+                    <mat-option class="bird-search" *ngFor="let species of activeSp"
+                        [ngStyle]="getOptionStyle(species, filted)" [value]="species.value"
+                        (click)="$event.stopPropagation()">
+                        {{species.value}}
+                    </mat-option>
+                </ng-container>
+            </mat-select>
+        </mat-form-field>
+
+
+        <mat-form-field appearance="outline" class="width-40">
+            <mat-label>Изберете име</mat-label>
+            <mat-select disableRipple [disabled]="!selectedSp" [formControl]="controlName" [(value)]="selectedN"
+                (closed)="updateBirds()">
+                <mat-option disabled>
+                    <input type="text" matInput [formControl]="filterName" placeholder="Filter...">
+                </mat-option>
+                <mat-divider></mat-divider>
+                <mat-option value="" *ngIf="controlName.value && !filterName.value" (click)="resetFilterNames()">
+                    <mat-icon>replay</mat-icon> Изчистване на филтъра
+                </mat-option>
+                <ng-container>
+                    <ng-container *ngIf="filtedNameOptions$ | async as filted">
+                        <mat-option disabled *ngIf="filted.length == 0">Такава опция не е намерена</mat-option>
+                        <mat-option *ngFor="let name of activeN" [ngStyle]="getOptionStyle(name, filted)"
+                            class="bird-search" [value]="name.value" (click)="$event.stopPropagation()">
+                            {{name.value}}
+                        </mat-option>
+                    </ng-container>
+                </ng-container>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="scrollable-container">
+        <app-bird-item *ngFor="let birdItem of visibleBirds; let i = index" [bird]="birdItem" [id]="birdItem.id">
+        </app-bird-item>
+    </div>
+</div>

@@ -17,10 +17,11 @@ import { BirdsService } from './birds/birds.service';
 import { BirdDetailComponent } from './birds/bird-detail/bird-detail.component';
 import { BirdStartComponent } from './birds/bird-start/bird-start.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatDividerModule} from '@angular/material/divider';
+import { MatDividerModule } from '@angular/material/divider';
 import { BirdTeamComponent } from './birds/bird-team/bird-team.component';
 import { BirdPhotographerComponent } from './birds/bird-photographer/bird-photographer.component';
 import { BirdViaponticaComponent } from './birds/bird-viapontica/bird-viapontica.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { BirdViaponticaComponent } from './birds/bird-viapontica/bird-viapontica
     MatTooltipModule,
     FormsModule,
     ReactiveFormsModule,
-    MatDividerModule
+    MatDividerModule,
+    MatDialogModule
   ],
   providers: [BirdsService],
   bootstrap: [AppComponent]

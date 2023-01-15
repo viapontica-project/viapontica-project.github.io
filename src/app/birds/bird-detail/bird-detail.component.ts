@@ -1,5 +1,6 @@
 import { ThisReceiver } from '@angular/compiler';
 import { AfterViewInit, ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Bird } from '../bird.model';
 import { BirdsService } from '../birds.service';
@@ -27,7 +28,8 @@ export class BirdDetailComponent implements OnInit {
     private birdService: BirdsService,
     private route: ActivatedRoute,
     private router: Router,
-    private cdref: ChangeDetectorRef
+    private cdref: ChangeDetectorRef,
+    public dialog: MatDialog
   ) { }
 
 
@@ -44,6 +46,11 @@ export class BirdDetailComponent implements OnInit {
         this.isSelected = false;
       }
     })
+  }
+
+  openImageDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
+    //to be implemented
+    console.log('Opening image...')
   }
 
 }

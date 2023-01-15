@@ -20,10 +20,10 @@ export class BirdListComponent implements OnInit {
   public activeSp: Option[] = [];
   public activeN: Option[] = [];
   public activeNames: string[] = [];
-  public control: FormControl = new FormControl('', [Validators.required])
+  public control: FormControl = new FormControl('')
   public filter: FormControl = new FormControl('');
   public filtedSpeciesOptions$!: Observable<Array<Option>>;
-  public controlName: FormControl = new FormControl('', [Validators.required])
+  public controlName: FormControl = new FormControl('')
   public filterName: FormControl = new FormControl('');
   public filtedNameOptions$!: Observable<Array<Option>>;
   public selectedSpecies: string = '';
@@ -45,13 +45,7 @@ export class BirdListComponent implements OnInit {
         this.activeSp.push({ value: bird.species })
       }
     }
-    //including all active names
-    // for (let bird of this.birds) {
-    //   if (!this.activeNames.includes(bird.name)) {
-    //     this.activeNames.push(bird.name);
-    //     this.activeN.push({ value: bird.name })
-    //   }
-    // }
+
 
     this.filtedSpeciesOptions$ = this.filter.valueChanges.pipe(
       debounceTime(50),
@@ -68,14 +62,6 @@ export class BirdListComponent implements OnInit {
       tap(target => console.log(target)),
       map(target => this.activeN.filter(opt => opt.value.toLowerCase().includes(target)))
     );
-  }
-
-  getOptionStyle(opt: Option, filted: Array<Option>): { [key: string]: any } {
-    const style: { [key: string]: any } = {};
-
-    style['display'] = filted.indexOf(opt) < 0 ? 'none' : '';
-
-    return style;
   }
 
   updateBirds() {

@@ -14,8 +14,7 @@
 
                     <mat-option disabled *ngIf="filted.length == 0">Такава опция не е намерена</mat-option>
 
-                    <mat-option class="bird-search" *ngFor="let species of activeSp"
-                        [ngStyle]="getOptionStyle(species, filted)" [value]="species.value"
+                    <mat-option class="bird-search" *ngFor="let species of activeSp" [value]="species.value"
                         (click)="$event.stopPropagation()">
                         {{species.value}}
                     </mat-option>
@@ -38,8 +37,8 @@
                 <ng-container>
                     <ng-container *ngIf="filtedNameOptions$ | async as filted">
                         <mat-option disabled *ngIf="filted.length == 0">Такава опция не е намерена</mat-option>
-                        <mat-option *ngFor="let name of activeN" [ngStyle]="getOptionStyle(name, filted)"
-                            class="bird-search" [value]="name.value" (click)="$event.stopPropagation()">
+                        <mat-option *ngFor="let name of activeN" class="bird-search" [value]="name.value"
+                            (click)="$event.stopPropagation()">
                             {{name.value}}
                         </mat-option>
                     </ng-container>

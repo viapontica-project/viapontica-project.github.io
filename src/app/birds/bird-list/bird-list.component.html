@@ -47,7 +47,8 @@
         </mat-form-field>
     </div>
     <div class="scrollable-container">
-        <app-bird-item *ngFor="let birdItem of visibleBirds; let i = index" [bird]="birdItem" [id]="birdItem.id">
+        <app-bird-item class="bird-item-container" *ngFor="let birdItem of visibleBirds; let i = index"
+            [bird]="birdItem" [id]="birdItem.id">
         </app-bird-item>
     </div>
 </div>

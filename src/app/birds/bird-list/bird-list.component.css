@@ -28,13 +28,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #2187ab;
+    background: #47B7CB;
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #1a6985;
+    background: #0096AE;
 }
 
 .width-40 {
@@ -43,6 +43,10 @@
 
 .bird-search {
     font-size: 100%;
+}
+
+.bird-item-container {
+    max-width: 98% !important;
 }
 
 .search-container {

@@ -25,8 +25,8 @@
 
         <mat-form-field appearance="outline" class="width-40">
             <mat-label>Изберете име</mat-label>
-            <mat-select disableRipple [disabled]="!selectedSp" [formControl]="controlName" [(value)]="selectedN"
-                (closed)="updateBirds()">
+            <mat-select disableRipple [disabled]="!selectedSp && !lastSelectedSp" [formControl]="controlName"
+                [(value)]="selectedN" (closed)="updateBirds()">
                 <mat-option disabled>
                     <input type="text" matInput [formControl]="filterName" placeholder="Filter...">
                 </mat-option>

@@ -64,7 +64,25 @@ export class BirdListComponent implements OnInit {
     );
   }
 
+
   updateBirds() {
+    if (this.lastSelectedSp === "" && this.selectedSp) { // first selected
+      this.lastSelectedSp = this.selectedSp
+    } else if (this.lastSelectedSp !== "" && this.lastSelectedSp !== this.selectedSp) { //if there is a new value
+
+
+      this.visibleBirds = this.birds.filter(bird => bird.species === this.selectedSp)
+      this.selectedN = "";
+      this.activeN = [];
+      this.activeNames = [];
+      for (let bird of this.birds) {
+        if (bird.species === this.selectedSp && !this.activeNames.includes(bird.name)) {
+          this.activeNames.push(bird.name);
+          this.activeN.push({ value: bird.name })
+        }
+      }
+    }
+
     if (this.selectedSp !== '' && this.selectedN === "") { // onlySpecies Selected
       this.visibleBirds = this.birds.filter(bird => bird.species === this.selectedSp)
       for (let bird of this.birds) {
@@ -89,7 +107,7 @@ export class BirdListComponent implements OnInit {
         map(target => this.activeSp.filter(opt => opt.value.toLowerCase().includes(target)))
       );
 
-    } else if (this.selectedSp !== '' && this.selectedN !== "") {
+    } else if (this.selectedSp !== '' && this.selectedSp === this.lastSelectedSp && this.selectedN !== "") {
       this.activeN = [];
       this.activeNames = [];
       for (let bird of this.birds) {
@@ -127,6 +145,7 @@ export class BirdListComponent implements OnInit {
   resetFilter() {
     this.activeN = [];
     this.selectedSp = "";
+    this.lastSelectedSp = "";
     this.activeNames = [];
     this.visibleBirds = this.birds.slice();
   }

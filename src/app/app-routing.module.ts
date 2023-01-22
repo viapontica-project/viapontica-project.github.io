@@ -11,7 +11,6 @@ import { BirdViaponticaComponent } from './birds/bird-viapontica/bird-viapontica
 
 const routes: Routes = [
   { path: "", redirectTo: "/birds", pathMatch: "full" },
-  { path: "https://viapontica-project.github.io/", redirectTo: "/birds", pathMatch: "full" },
   { path: "home", redirectTo: "/birds" },
   { path: 'forUs', component: BirdTeamComponent },
   { path: 'forPictures', component: BirdPhotographerComponent },

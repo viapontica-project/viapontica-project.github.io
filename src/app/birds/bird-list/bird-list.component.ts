@@ -70,8 +70,8 @@ export class BirdListComponent implements OnInit {
       this.lastSelectedSp = this.selectedSp
     } else if (this.lastSelectedSp !== "" && this.lastSelectedSp !== this.selectedSp) { //if there is a new value
 
-
-      this.visibleBirds = this.birds.filter(bird => bird.species === this.selectedSp)
+      this.lastSelectedSp = this.selectedSp;
+      this.visibleBirds = this.birds.filter(bird => bird.species === this.selectedSp);
       this.selectedN = "";
       this.activeN = [];
       this.activeNames = [];
@@ -81,6 +81,7 @@ export class BirdListComponent implements OnInit {
           this.activeN.push({ value: bird.name })
         }
       }
+      return
     }
 
     if (this.selectedSp !== '' && this.selectedN === "") { // onlySpecies Selected

@@ -18,10 +18,16 @@
     <mat-card-title class="title-big" matTooltip="Подробна информация">
       <a href={{bird.infoLink}}>{{bird.name}}</a>
     </mat-card-title>
-    <mat-card-subtitle class="subtitle-big"> <strong>Разред: </strong>{{bird.species}}</mat-card-subtitle>
-    <mat-card-subtitle class="subtitle-big"><strong>Местообитание: </strong>{{bird.area}}</mat-card-subtitle>
+
   </mat-card-header>
-  <img mat-card-image [src]="bird.image" alt="{{ bird.name }}" (click)="openImageDialog('3000ms', '1500ms')">
+  <div class="rim">
+    <img mat-card-image [src]="bird.image" alt="{{ bird.name }}" (click)="openImageDialog('3000ms', '1500ms')">
+    <div class="rim2">
+      <mat-card-subtitle class="subtitle-big"> <strong>Разред: </strong>{{bird.species}}</mat-card-subtitle>
+      <mat-card-subtitle class="subtitle-big"><strong>Местообитание: </strong>{{bird.area}}</mat-card-subtitle>
+    </div>
+  </div>
+
   <mat-card-content class="subtitle-big">
     <p>{{bird.description}}</p>
   </mat-card-content>

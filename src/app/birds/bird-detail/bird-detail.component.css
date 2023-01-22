@@ -69,3 +69,11 @@
     text-decoration: none;
     color: black;
   }
+
+  .rim {
+    display: flex;
+  }
+
+  .rim2 {
+    margin-left: 10px;
+  }

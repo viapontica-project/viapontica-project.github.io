@@ -22,6 +22,7 @@ import { BirdTeamComponent } from './birds/bird-team/bird-team.component';
 import { BirdPhotographerComponent } from './birds/bird-photographer/bird-photographer.component';
 import { BirdViaponticaComponent } from './birds/bird-viapontica/bird-viapontica.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ImageDialogComponent } from './birds/dialogs/image-dialog/image-dialog.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     BirdStartComponent,
     BirdTeamComponent,
     BirdPhotographerComponent,
-    BirdViaponticaComponent
+    BirdViaponticaComponent,
+    ImageDialogComponent
   ],
   imports: [
     BrowserModule,

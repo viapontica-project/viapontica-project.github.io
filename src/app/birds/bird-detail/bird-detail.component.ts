@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Bird } from '../bird.model';
 import { BirdsService } from '../birds.service';
+import { ImageDialogComponent } from '../dialogs/image-dialog/image-dialog.component';
 
 @Component({
   selector: 'app-bird-detail',
@@ -48,9 +49,15 @@ export class BirdDetailComponent implements OnInit {
     })
   }
 
-  openImageDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
+  openImageDialog(enterAnimationDuration: string, exitAnimationDuration: string) {
     //to be implemented
-    console.log('Opening image...')
+    const imageDialog = this.dialog.open(ImageDialogComponent, {
+      width: "80vw",
+      height: "80vh",
+      enterAnimationDuration,
+      exitAnimationDuration
+    })
+    imageDialog.componentInstance.imagePath = this.bird.image;
   }
 
 }

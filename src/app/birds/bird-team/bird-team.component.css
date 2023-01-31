@@ -1,20 +1,25 @@
 .example-card {
-    width: 42%;
-    margin-bottom: 8px;
-    padding: 20px;
-  }
-  .horavotbora {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 5vh;
-    padding: 20px;
-    height: 80vh;
-    width: auto;
-  }
+  width: 42%;
+  margin-bottom: 8px;
+  padding: 20px;
+}
 
-  .mat-card-title-group {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 14vw;
+.horavotbora {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5vh;
+  padding: 20px;
+  height: 80vh;
+  width: auto;
+}
+
+.mat-card-title-group {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 14vw;
+}
+
+.mat-card-xl-image {
+  object-fit: cover;
 }

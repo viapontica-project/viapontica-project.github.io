@@ -44,7 +44,7 @@ export class BirdsService {
             name: "Пепеляв брегобегач",
             infoLink: "https://bg.wikipedia.org/wiki/%D0%9F%D0%B5%D0%BF%D0%B5%D0%BB%D1%8F%D0%B2_%D0%B1%D1%80%D0%B5%D0%B3%D0%BE%D0%B1%D0%B5%D0%B3%D0%B0%D1%87",
             species: "Дъждосвирцоподобни",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: "Дължина на тялото e 23 см, размахът на крилата е 58 см. Оперението е с малки сезонни и възрастови различия. Възрастните през есенно-зимния период отгоре са сиви, а отдолу белезникави. През размножителния период са с бели вежди, а краката са жълто-оранжеви. Младите наподобяват възрастните в брачно оперение, но краката са жълто-кафяви. Лесно се отличава по дългия и леко извит нагоре клюн. Биотоп: Среща се на ята по речни и соленоводни крайбрежия, понякога в смесени групи с други видове дъждосвирцови птици.",
             area: "Среща се на ята по речни и соленоводни крайбрежия, понякога в смесени групи с други видове дъждосвирцови птици.",
             image: "./../assets/pictures/166-pepelqv-bregobegach.jpg"
         },
@@ -53,7 +53,7 @@ export class BirdsService {
             name: "Ливадна бъбрица",
             infoLink: "https://bg.wikipedia.org/wiki/%D0%9F%D0%B5%D0%BF%D0%B5%D0%BB%D1%8F%D0%B2_%D0%B1%D1%80%D0%B5%D0%B3%D0%BE%D0%B1%D0%B5%D0%B3%D0%B0%D1%87",
             species: "Врабчоподобни",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: "Дължината на тялото е 17 см. оперението отгоре е зеленикавокафяво с многобройни удължени петна, които по гърба образуват ивици, гърлото е бяло, гушата и гърдите са изпъстрени с черни капковидни петна, краката са кафяви. Среща се в ливади и други открити пространства.",
             area: "Среща се в ливади и други открити пространства.",
             image: "./../assets/pictures/6-livadna-b.jpg"
         },
@@ -62,8 +62,8 @@ export class BirdsService {
             name: "Ушата чучулига",
             infoLink: "https://bg.wikipedia.org/wiki/%D0%9F%D0%B5%D0%BF%D0%B5%D0%BB%D1%8F%D0%B2_%D0%B1%D1%80%D0%B5%D0%B3%D0%BE%D0%B1%D0%B5%D0%B3%D0%B0%D1%87",
             species: "Врабчоподобни",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            area: "",
+            description: "Води наземен начин на живот, въпреки че лети добре. Храни се предимно с насекоми, които търси по земята. Гнезди, подобно на другите Чучулиги, направо на земята. Снася 2–5 изпъстрени с кафяви и сиви петънца яйца. Малките, подобно на останалите видове Чучулиги, се излюпват покрити с рядък пух и напълно безпомощни, но се развиват изключително бързо и след около 10 дни напускат гнездото. Родителите ги хранят с насекоми.",
+            area: "Oткрити равнинни и планински местности",
             image: "./../assets/pictures/7 ушата чучулига.jpg"
         },
         {
@@ -71,7 +71,7 @@ export class BirdsService {
             name: "Кос",
             infoLink: "https://bg.wikipedia.org/wiki/%D0%9F%D0%B5%D0%BF%D0%B5%D0%BB%D1%8F%D0%B2_%D0%B1%D1%80%D0%B5%D0%B3%D0%BE%D0%B1%D0%B5%D0%B3%D0%B0%D1%87",
             species: "Врабчоподобни",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: "Представителите на вида са с дължина от около 23,5 до 29 cm, имат дълга опашка и тежат 80 – 125 грама. Възрастният мъжки е с лъскаво черно оперение, чернокафеникави крака, оранжево околоочие и оранжев клюн. Клюнът потъмнява до известна степен през зимата. Възрастната женска е с опушенокафява окраска, тъп жълтеникавокафяв клюн, кафеникавобяла гушка и слаба петнистост по гърдите. Младият екземпляр е подобен на женския, но бледите петънца покриват и по-горните му части.",
             area: "Почти навсякъде, където успее да намери храна и подходящи условия за гнездене и размножаване.",
             image: "./../assets/pictures/8-kos.jpg"
         },
@@ -80,7 +80,7 @@ export class BirdsService {
             name: "Воден кос",
             infoLink: "https://bg.wikipedia.org/wiki/%D0%9F%D0%B5%D0%BF%D0%B5%D0%BB%D1%8F%D0%B2_%D0%B1%D1%80%D0%B5%D0%B3%D0%BE%D0%B1%D0%B5%D0%B3%D0%B0%D1%87",
             species: "Врабчоподобни",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: "Гнездовият период започва през април. Гнездото се прави в дупки между камъни, под туфи по стръмни брегове, в цепнатини по зидове и мостове. То е изградено от клончета, трева, сухи листа, мъх и лишеи, а вътре е застлано с листа. Снася 4 – 7 чисто бели яйца. Женската мъти яйцата сама от 15 до 18 дни. Малките остават в гнездото 19 – 24 дни и се изхранват от двамата родители. След напускане на гнездото те дълго време се движат на ято. Отглежда по две поколения годишно. През август семействата се разпадат и през зимните месеци се срещат отделни птици.",
             area: "Среща се в планините до алпийската зона. През зимата слиза ниско в предпланинските склонове",
             image: "./../assets/pictures/9-vodenkos.jpg"
         },
@@ -89,7 +89,7 @@ export class BirdsService {
             name: "Розов скорец",
             infoLink: "https://bg.wikipedia.org/wiki/%D0%9F%D0%B5%D0%BF%D0%B5%D0%BB%D1%8F%D0%B2_%D0%B1%D1%80%D0%B5%D0%B3%D0%BE%D0%B1%D0%B5%D0%B3%D0%B0%D1%87",
             species: "Врабчоподобни",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: "Дължината на тялото на розовия скорец е 19 – 22 см. На цвят той е розов, с черни глава, крила и опашка. При женската цветовете са по-малко ярки. Розовият скорец е разпространен в Средиземноморието, Югоизточна Европа, Предна и Средна Азия. През зимата достига до Индия. Живее в многобройни колонии, достигащи хиляди, а в миналото – и стотици хиляди птици. Предпочита да гнезди сред скалисти сипеи. Тъй като основната храна на розовия скорец са различни видове прелетни скакалци.",
             area: "Обитава степи и сухи пасища с каменисти хълмове, скални сипеи и стени и кариери.",
             image: "./../assets/pictures/10-rozov.jpg"
         },
@@ -98,7 +98,7 @@ export class BirdsService {
             name: "Черна каня",
             infoLink: "https://bg.wikipedia.org/wiki/%D0%9F%D0%B5%D0%BF%D0%B5%D0%BB%D1%8F%D0%B2_%D0%B1%D1%80%D0%B5%D0%B3%D0%BE%D0%B1%D0%B5%D0%B3%D0%B0%D1%87",
             species: "Ястребоподобни",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: "Черната каня е малко контрастна, почти еднакво оцветена в тъмнокафяво. Средно голяма граблива птица.Дължината на тялото e 55-59 cm. Размаха на крилете e135-155 cm. Теглото е 900 гр, като женските са по-едри.Излюпването не става едновременно, а през 3-4 дни, дори и до 8 дни.",
             area: "Среща се в равнинни гори в открити пространства.",
             image: "./../assets/pictures/12-chernakanq.jpg"
         },
@@ -107,7 +107,7 @@ export class BirdsService {
             name: "Египетски лешояд",
             infoLink: "https://bg.wikipedia.org/wiki/%D0%9F%D0%B5%D0%BF%D0%B5%D0%BB%D1%8F%D0%B2_%D0%B1%D1%80%D0%B5%D0%B3%D0%BE%D0%B1%D0%B5%D0%B3%D0%B0%D1%87",
             species: "Ястребоподобни",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: "Дължината на тялото е 60 – 85 cm, а размахът на крилете от 150 до 170 cm. Теглото му достига 1,6 – 2,5 kg. Разпространен е в Европа (включително България), Африка и Азия. Обитава степи, полупустини, пустини, скалисти райони (подходящи за гнездата му) и всякакъв тип равнини. Понякога в близост до сметища. Лешоядите са санитарите на природата и египетският лешояд не прави изключение. Храни се предимно с мърша, но понякога улавя дребни гръбначни и безгръбначни като жаби, охлюви и всякакъв вид яйца.",
             area: "Обитава степи, полупустини, пустини, скалисти райони и всякакъв тип равнини.",
             image: "./../assets/pictures/13-egypt-leshoqd.jpg"
         },
@@ -115,8 +115,8 @@ export class BirdsService {
             id: 13,
             name: "Розов пеликан",
             infoLink: "https://bg.wikipedia.org/wiki/%D0%9F%D0%B5%D0%BF%D0%B5%D0%BB%D1%8F%D0%B2_%D0%B1%D1%80%D0%B5%D0%B3%D0%BE%D0%B1%D0%B5%D0%B3%D0%B0%D1%87",
-            species: "Хищни",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            species: "Пеликаноподобни",
+            description: "Гнездата и малките им колонии са сред тръстиките в езера, блата и делти на реки. Гнездото е голямо и се намира върху туфи тръстика или малки островчета, често в близост до гнездата на други видове. Снася 2-3 яйца. Възрастният розов пеликан в началото на размножителния период е с нежно розово оперение.",
             area: "Обитава блата, езера, рибарници, язовири и полусолени водоеми.",
             image: "./../assets/pictures/15 розов пеликан.jpg"
         },
@@ -125,7 +125,7 @@ export class BirdsService {
             name: "Средна бекасина",
             infoLink: "https://bg.wikipedia.org/wiki/%D0%9F%D0%B5%D0%BF%D0%B5%D0%BB%D1%8F%D0%B2_%D0%B1%D1%80%D0%B5%D0%B3%D0%BE%D0%B1%D0%B5%D0%B3%D0%B0%D1%87",
             species: "Дъждосвирцоподобни",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: "Дължината на тялото e 26 см, Размах на крилата: 46 см. Оперение: Възрастните и младите през цялата година наподобяват голямата бекасина по окраската на главата и горната част на тялото; гърлото е белезникаво, а гушата – жълтеникава с дребни кафяви щрихи; останалото оперение отдолу е бяло с тъмнокафяви препаски по слабините; крайните опашни пера са кафяви със светли върхове. ",
             area: "При миграции и зимуване се среща край блата, мочурища, разливи на реки.",
             image: "./../assets/pictures/17 Средна бекасина.jpg"
         },

@@ -22,4 +22,6 @@
 
 .mat-card-xl-image {
   object-fit: cover;
+  height: 35vh;
+  width: auto;
 }

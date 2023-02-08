@@ -7,6 +7,7 @@ import { BirdsResolverService } from './birds/birds-resolver.service';
 import { BirdTeamComponent } from './birds/bird-team/bird-team.component';
 import { BirdPhotographerComponent } from './birds/bird-photographer/bird-photographer.component';
 import { BirdViaponticaComponent } from './birds/bird-viapontica/bird-viapontica.component';
+import { BirdViaaristotelisComponent } from './birds/bird-viaaristotelis/bird-viaaristotelis.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'forUs', component: BirdTeamComponent },
   { path: 'forPictures', component: BirdPhotographerComponent },
   { path: 'forViapontica', component: BirdViaponticaComponent },
+  { path: 'forViaaristotelis', component: BirdViaaristotelisComponent },
   {
     path: "birds", component: BirdsComponent,
     children: [

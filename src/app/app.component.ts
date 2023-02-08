@@ -48,6 +48,10 @@ export class AppComponent implements OnInit, OnDestroy {
     this.router.navigate(['forViapontica'], { relativeTo: this.route });
   }
 
+  onForViaaristotelis() {
+    this.router.navigate(['forViaaristotelis'], { relativeTo: this.route });
+  }
+
   onHomePage() {
     this.router.navigate(['home'], { relativeTo: this.route });
   }

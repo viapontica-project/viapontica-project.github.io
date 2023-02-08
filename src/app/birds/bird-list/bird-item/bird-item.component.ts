@@ -20,7 +20,9 @@ export class BirdItemComponent implements OnInit {
       species: '',
       description: '',
       area: '',
-      image: ''
+      image: '',
+      status: '',
+      redbook: ''
     };
     this.index = 0;
   }

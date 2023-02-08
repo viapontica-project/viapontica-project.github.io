@@ -20,7 +20,9 @@ export class BirdDetailComponent implements OnInit {
     species: '',
     description: '',
     area: '',
-    image: ''
+    image: '',
+    status: '',
+    redbook: ''
   };
   id: number = 0;
   isSelected: boolean = false;

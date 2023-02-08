@@ -6,6 +6,8 @@ constructor(
     public species: string,
     public description: string,
     public area: string,
-    public image: string
+    public image: string,
+    public status: string,
+    public redbook: string
 ){}
 }

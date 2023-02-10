@@ -4,6 +4,12 @@
   padding: 20px;
 }
 
+.mat-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+}
+
 .horavotbora {
   display: flex;
   flex-direction: row;
@@ -17,11 +23,25 @@
 .mat-card-title-group {
   display: flex;
   justify-content: space-between;
-  column-gap: 14vw;
+  flex-direction: row-reverse;
 }
 
 .mat-card-xl-image {
   object-fit: cover;
   height: 35vh;
   width: auto;
+  border-radius: 5px;
+  margin-left: 5vh;
+  margin-top: 1vh;
+}
+.mat-card-image{
+  max-height: 25vh;
+}
+
+.mat-card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5vh;
+  margin-top: 6vh;
 }

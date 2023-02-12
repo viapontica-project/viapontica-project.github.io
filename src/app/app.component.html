@@ -1,6 +1,6 @@
 <mat-toolbar>
   <div class="container-birds">
-    
+
 
     <div class="cursor-pointer" (click)="onHomePage()">
       <img src="./../assets/pictures/webicon2.png" class="small-img" (click)="onHomePage()">
@@ -28,20 +28,11 @@
 
     <button mat-button [matMenuTriggerFor]="animals" class="menu-za-proekta">За проекта</button>
     <mat-menu #animals="matMenu">
-      <button mat-menu-item  (click)="onForUs()">За нас</button>
-      <button mat-menu-item  (click)="onForPictures()">За автора на снимките</button>
-      <button mat-menu-item  (click)="onForViapontica()">Via Pontica</button>
-      <button mat-menu-item  (click)="onForViaaristotelis()">Via Aristotelis</button>
+      <button mat-menu-item (click)="onForUs()">За нас</button>
+      <button mat-menu-item (click)="onForPictures()">За автора на снимките</button>
+      <button mat-menu-item (click)="onForViapontica()">Via Pontica</button>
+      <button mat-menu-item (click)="onForViaaristotelis()">Via Aristotelis</button>
     </mat-menu>
-
-    
-    
-
-
-
   </div>
 </mat-toolbar>
-
-<!-- <app-bird-list></app-bird-list> -->
-<!-- <router-outlet></router-outlet> -->
 <router-outlet></router-outlet>

@@ -9,12 +9,6 @@
     height: -webkit-fill-available;
 }
 
-/* 
-.contentdiv {
-    display: flex;
-    flex-direction: row;
-} */
-
 .mat-card-image {
     float: right;
     margin: 10px;
@@ -24,4 +18,4 @@
 h3 {
     text-align: justify;
     font-size: 1.5em;
-  }
+}

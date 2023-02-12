@@ -1,4 +1,3 @@
-import { Injectable, Output } from '@angular/core';
 import { Bird } from "./bird.model";
 
 export class BirdsService {

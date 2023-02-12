@@ -52,7 +52,6 @@ export class BirdDetailComponent implements OnInit {
   }
 
   openImageDialog(enterAnimationDuration: string, exitAnimationDuration: string) {
-    //to be implemented
     const imageDialog = this.dialog.open(ImageDialogComponent, {
       width: "80vw",
       height: "80vh",
